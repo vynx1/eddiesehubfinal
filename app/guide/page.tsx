@@ -8,7 +8,7 @@ import { AlarmClock, ApertureIcon, Goal, SquareStack } from "lucide-react";
 import Image from "next/image";
 import MobileNav from "@/components/MobileNav";
 import { modulesLinks } from "@/links";
-import { UserButton } from "@clerk/nextjs";
+
 
 
 export default function Component() {
@@ -45,9 +45,6 @@ export default function Component() {
         <header className="sticky top-0 z-10 flex h-16 items-center justify-between border-b bg-muted px-4 shadow-sm md:px-6">
           <div className="flex items-center gap-4">
             <h1 className="text-lg font-semibold">Courses and Past Sessions</h1>
-          </div>
-          <div className="flex items-center gap-4">
-            <UserButton />
           </div>
         </header>
         <main className="flex-1 px-4 py-6 md:px-6">
