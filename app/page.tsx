@@ -11,7 +11,6 @@ import MobileNav from '@/components/MobileNav';
 import { Button } from '@/components/ui/button';
 import GetStartedCard from '@/components/Getstarted';
 import GetStarted from '@/components/Getstarted';
-import { UserButton } from '@clerk/nextjs';
 
 
 export default function Home() {
@@ -104,23 +103,23 @@ function Navbar() {
         <h6 className="font-bold text-lg pl-3">
           Eddie's Ehub</h6>
         <div className="flex justify-center flex-grow">
-          <ul className="flex gap-4 text-sm justify-center ml-18">
+          <ul className="flex gap-4 text-sm justify-center ml-18ç">
             <li><Link className="hover:text-mint-1 transition-colors pl-8" href="/guide">Guides</Link></li>
           </ul>
         </div>
         <div className="flex gap-2">
-          <Button className="hover:bg-gray-300 text-white py-2 px-4 rounded" variant="outline">
+          {/* <Button className="hover:bg-gray-300 text-white py-2 px-4 rounded" variant="outline">
             <Link href='/sign-in'>
               Log In
             </Link>
-          </Button>
+          </Button> */}
           <Button className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 ml-4 rounded">
             <Link href='/sign-up'>
               Get Started
             </Link>
           </Button>
           <div className=" mt-2 ml-4">
-          <UserButton />
+          {/* <UserButton /> */}
           </div>
 
         </div>
